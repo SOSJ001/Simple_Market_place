@@ -1,5 +1,6 @@
 <script>
   import Hero from "../assets/image-1.png";
+    import Button from "./button.svelte";
 </script>
 
 <div class=" md:h-4/5  relative">
@@ -24,9 +25,7 @@
           >
         </div>
       </div>
-      <div>
-        <button class="bg-blue-600 p-3 rounded-lg font-semibold hover:bg-blue-700"> VIEW COLLECTION </button>
-      </div>
+      <Button/>
     </div>
   </div>
 </div>
