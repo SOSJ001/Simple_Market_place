@@ -2,9 +2,9 @@
     import EachDiff from "./eachDiff.svelte";
 </script>
 
-<div class="my-10 p-10 bg-gray-500 text-white flex flex-col gap-5 items-center">
+<div class="md:my-10 md:p-10 my-5 p-5 bg-gray-500 text-white flex flex-col gap-5 items-center">
     <span class="font-medium text-lg">WHAT MAKES OUR BRAND DIFFERENT</span>
-    <div class=" grid grid-cols-4 gap-5">
+    <div class=" grid md:grid-cols-4 grid-cols-1 gap-5">
         <EachDiff />
         <EachDiff>
             <div slot="icon">

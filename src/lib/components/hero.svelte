@@ -2,9 +2,9 @@
   import Hero from "../assets/image-1.png";
 </script>
 
-<div class=" h-4/5  relative">
+<div class=" md:h-4/5  relative">
   <div
-    class="absolute top-0 left-0 bg-cover bg-center md:h-full h-4/5 w-full flex flex-col justify-end items-end p-5"
+    class=" bg-cover bg-center md:h-full  w-full flex flex-col justify-end items-end p-5"
     style="background-image: url('{Hero}');"
   >
    

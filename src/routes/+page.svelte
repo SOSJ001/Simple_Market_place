@@ -2,7 +2,7 @@
     import Categories from "../lib/components/categories.svelte";
     import Different from "../lib/components/different.svelte";
     import Hero from "../lib/components/hero.svelte";
-    import Listings from "../lib/components/listings.svelte";
+    import Product from "../lib/components/product.svelte";
     import Top from "../lib/components/top.svelte";
 </script>
 
@@ -11,5 +11,10 @@
     <Categories />
     <Hero />
     <Different />
-    <Listings/>
+    <div class="p-10 bg-gray-500 md:flex md:flex-row grid grid-cols-2 items-center gap-5 justify-center">
+       <Product/>
+       <Product/>
+       <Product/>
+       <Product/>
+    </div>
 </div>
