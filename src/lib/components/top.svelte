@@ -1,5 +1,5 @@
 <!-- top below -->
-<div class="md:grid grid-cols-3 flex flex-row justify-between items-center text-white font-semibold">
+<div class="p-5 md:grid md:grid-cols-3 md:gap-0 gap-3 flex flex-row justify-between items-center text-white font-semibold">
     <div class=" text-2xl">S.O.S</div>
 
     <div class="relative">
@@ -7,7 +7,7 @@
             type="text"
             id="email-address-icon"
             class=" border text-gray-50 text-sm rounded-lg  block w-full pr-10 p-2.5 bg-gray-500 border-gray-600 placeholder-gray-50 focus:ring-white focus:border-white"
-            placeholder="name@flowbite.com"
+            placeholder="Search Here"
         />
         <div class="absolute inset-y-0 right-0 flex items-center pr-3.5">
             <button>
