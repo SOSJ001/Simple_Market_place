@@ -11,10 +11,22 @@
     <Categories />
     <Hero />
     <Different />
-    <div class="p-10 bg-gray-500 md:flex md:flex-row grid grid-cols-2 items-center gap-5 justify-center">
-       <Product/>
-       <Product/>
-       <Product/>
-       <Product/>
+    <div class=" bg-gray-500 flex flex-col items-center justify-center">
+        <div
+            class="p-10  md:flex md:flex-row grid grid-cols-2 items-center gap-3 justify-center"
+        >
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+        </div>
+        <div>
+            <button
+                class="bg-blue-600 p-3 rounded-lg font-semibold hover:bg-blue-700"
+            >
+                VIEW COLLECTION
+            </button>
+        </div>
     </div>
 </div>
