@@ -1,4 +1,4 @@
-<div class="font-medium bg-blue-500 text-gray-50 p-10 rounded-lg flex flex-col gap-3 items-start justify-center">
+<div class="font-medium bg-blue-700 text-gray-50 p-10 rounded-lg flex flex-col gap-3 items-start justify-center">
     <slot name="icon">
         <svg
         class="text-white"
