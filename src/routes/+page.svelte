@@ -1,14 +1,13 @@
 <script>
     import Categories from "../lib/components/categories.svelte";
+    import Different from "../lib/components/different.svelte";
     import Hero from "../lib/components/hero.svelte";
-import Top from "../lib/components/top.svelte";
-
+    import Top from "../lib/components/top.svelte";
 </script>
 
-<div class="bg-gray-700 h-screen w-screen overflow-x-hidden">
-<Top/>
-<Categories/>
-<Hero/>
-    
-
+<div class="bg-black-500 h-screen w-screen overflow-x-hidden">
+    <Top />
+    <Categories />
+    <Hero />
+    <Different />
 </div>

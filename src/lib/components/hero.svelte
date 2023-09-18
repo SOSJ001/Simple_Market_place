@@ -1,11 +1,32 @@
 <script>
-    import Hero from "../assets/image-1.png";
+  import Hero from "../assets/image-1.png";
 </script>
 
-<div class=" h-4/6">
-   <div class="bg-cover bg-center md:h-full h-4/6 w-full" style="background-image: url('{Hero}');">
-    <!-- Your content goes here -->
-    
-    
-  </div> 
+<div class=" h-4/5  relative">
+  <div
+    class="absolute top-0 left-0 bg-cover bg-center md:h-full h-4/5 w-full flex flex-col justify-end items-end p-5"
+    style="background-image: url('{Hero}');"
+  >
+   
+    <div
+      class=" text-black flex flex-col gap-5 justify-between p-5 bg-gray-300 shadow-xl bg-opacity-20 md:w-1/2 md:h-4/5"
+    >
+      <div class="flex gap-5 flex-col font-medium">
+        <div>
+          <span class="text-3xl font-bold"
+            >Luxury homeware for people <br /> who love timeless design quality</span
+          >
+        </div>
+        <div>
+          <span
+            >With our new collection, view over 400 <br /> bespoke pieces from
+            homeware through to <br /> furniture today</span
+          >
+        </div>
+      </div>
+      <div>
+        <button class="bg-blue-600 p-3 rounded-lg font-semibold hover:bg-blue-700"> VIEW COLLECTION </button>
+      </div>
+    </div>
+  </div>
 </div>
