@@ -1,8 +1,10 @@
 <script>
     import Button from "../lib/components/button.svelte";
+    import CallToAction from "../lib/components/callToAction.svelte";
     import Categories from "../lib/components/categories.svelte";
     import Different from "../lib/components/different.svelte";
     import Explain from "../lib/components/explain.svelte";
+    import Footer from "../lib/components/footer.svelte";
     import Hero from "../lib/components/hero.svelte";
     import Product from "../lib/components/product.svelte";
     import Top from "../lib/components/top.svelte";
@@ -26,4 +28,6 @@
         <Button />
     </div>
     <Explain />
+    <CallToAction/>
+    <Footer/>
 </div>
