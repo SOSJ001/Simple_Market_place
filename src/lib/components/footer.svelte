@@ -1,4 +1,8 @@
-<div class="flex flex-col bg-gray-500">
+<script>
+export let color = "bg-black-500";
+</script>
+
+<div class="flex flex-col {color} ">
     <div
         class=" text-gray-50 flex flex-col md:grid-cols-2 md:grid gap-5 md:gap-5 md:p-10 p-2 text-sm md:text-md"
     >

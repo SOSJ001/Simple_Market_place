@@ -15,7 +15,7 @@
     <Categories />
     <Hero />
     <Different />
-    <div class=" bg-gray-500 flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center">
         <div
             class="p-10 md:flex md:flex-row grid grid-cols-2 items-center gap-5 justify-center"
         >

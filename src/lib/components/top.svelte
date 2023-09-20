@@ -1,6 +1,6 @@
 <!-- top below -->
 <div class="p-5 md:grid md:grid-cols-3 md:gap-0 gap-3 flex flex-row justify-between items-center text-white font-semibold">
-    <div class=" text-2xl">S.O.S</div>
+    <a href="/"><div class=" text-2xl">S.O.S</div></a>
 
     <div class="relative">
         <input
