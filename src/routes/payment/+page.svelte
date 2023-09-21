@@ -1,13 +1,16 @@
 <script>
     import Top from "$lib/components/top.svelte";
+    import Footer from "$lib/components/footer.svelte";
+    import CartTable from "$lib/components/CartTable.svelte";
+    import { Modal, Tabs, TabItem } from "flowbite-svelte";
+
+    
+    // implement the on click function on the button
 </script>
 
 <div class=" bg-black-500 h-screen w-screen overflow-x-hidden">
     <Top />
-    <div class=" flex items-center justify-center w-full h-full text-white text-5xl">
-        <h1 >
-            ITS A WRAP FOR TODAY
-        </h1>
-
-    </div>
+    <CartTable />
+    <Footer />
+    
 </div>
