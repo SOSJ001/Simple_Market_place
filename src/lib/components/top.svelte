@@ -30,7 +30,7 @@
     </div>
 
     <div class="flex flex-row md:gap-10 gap-3 justify-end">
-        <a href="/"
+        <a href="/payment"
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
