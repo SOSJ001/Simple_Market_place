@@ -1,6 +1,6 @@
 <script>
     import { Modal } from "flowbite-svelte";
-    import Photo from "$lib/assets/Photo.png";
+    import Photo from "$lib/Photo.png";
     import Rating from "$lib/components/rating.svelte";
     import QuanBtn from "$lib/components/QuanBtn.svelte";
     import Button from "$lib/components/button.svelte";

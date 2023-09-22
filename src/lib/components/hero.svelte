@@ -1,5 +1,5 @@
 <script>
-  import Hero from "../assets/image-1.png";
+  import Hero from "../image-1.png";
     import Button from "./button.svelte";
 </script>
 

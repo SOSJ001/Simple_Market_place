@@ -1,5 +1,5 @@
 <script>
-    import Chair from "../assets/photo.png";
+    import Chair from "../photo.png";
     import Rating from "./rating.svelte";
 </script>
 

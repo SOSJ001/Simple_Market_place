@@ -1,5 +1,5 @@
 <script>
-    import Large from "../assets/Large.png";
+    import Large from "../Large.png";
 </script>
 
 <div

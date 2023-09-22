@@ -1,6 +1,6 @@
 <script>
     import Button from "./button.svelte";
-    import image from "../assets/Photo.png";
+    import image from "../Photo.png";
     import Rating from "./rating.svelte";
     import QuanBtn from "./QuanBtn.svelte";
     let link = "/payment";

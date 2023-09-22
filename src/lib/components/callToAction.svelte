@@ -1,5 +1,5 @@
 <script>
-    import Large from "../assets/Large.png";
+    import Large from "../Large.png";
     import Button from "./button.svelte";
 </script>
 

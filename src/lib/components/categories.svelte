@@ -7,3 +7,9 @@
 <a href="/browsing">Plant Pots</a>
 <a class="md:col-auto col-span-3 " href="/browsing">Plant Pots</a>
 </div>
+
+<style>
+    div a:hover{
+        color: aqua;
+    }
+</style>
