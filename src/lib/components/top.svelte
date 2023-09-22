@@ -5,6 +5,7 @@
     import Button from "$lib/components/button.svelte";
     import { fade } from "svelte/transition";
     let formModal = false;
+    let addModal = false;
     //   let successModal = false;
 </script>
 
@@ -41,8 +42,28 @@
     </div>
 
     <div class="flex flex-row md:gap-10 gap-3 justify-end">
+        <!-- add button -->
+
+        <a
+            class="flex gap-1"
+            on:click|preventDefault={() => {
+                addModal = !addModal;
+            }}
+            href="/"
+            ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="26"
+                viewBox="0 0 20 20"
+                ><path
+                    fill="currentColor"
+                    d="M11 9h4v2h-4v4H9v-4H5V9h4V5h2v4zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16z"
+                /></svg
+            ><span>Add</span></a
+        >
+
         <!-- Cart svg -->
-        <a href="/payment"
+        <a class="flex gap-1" href="/payment"
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -74,11 +95,12 @@
                     d="M25.1175 5.24797H6.01299L5.3067 1.63035C5.26643 1.43286 5.15818 1.25575 5.0008 1.12985C4.84342 1.00394 4.64686 0.937213 4.44536 0.941276H1V2.66395H3.73906L7.02938 19.2017C7.06964 19.3992 7.17789 19.5763 7.33527 19.7022C7.49266 19.8281 7.68921 19.8948 7.89071 19.8907H23.3948V18.1681H8.59701L7.89071 14.7227H23.3948C23.5939 14.7276 23.7886 14.6633 23.9456 14.5408C24.1027 14.4183 24.2124 14.2452 24.2562 14.0509L25.9788 6.29881C26.0077 6.17101 26.007 6.0383 25.9769 5.9108C25.9467 5.7833 25.8879 5.66436 25.8048 5.56302C25.7218 5.4617 25.6167 5.38065 25.4976 5.32605C25.3785 5.27146 25.2485 5.24475 25.1175 5.24797ZM22.7057 13H7.56341L6.35753 6.97065H24.0408L22.7057 13Z"
                     stroke="#EEEEEE"
                 />
-            </svg></a
+            </svg><span>Cart</span></a
         >
 
         <!-- Profile Svg -->
         <a
+            class="flex gap-1"
             on:click|preventDefault={() => {
                 formModal = !formModal;
             }}
@@ -106,13 +128,12 @@
                     d="M13.5 0.5C11.0277 0.5 8.61099 1.23311 6.55538 2.60663C4.49976 3.98015 2.89761 5.93238 1.95151 8.21646C1.00542 10.5005 0.757874 13.0139 1.24019 15.4386C1.7225 17.8634 2.91301 20.0907 4.66117 21.8388C6.40933 23.587 8.63661 24.7775 11.0614 25.2598C13.4861 25.7421 15.9995 25.4946 18.2835 24.5485C20.5676 23.6024 22.5199 22.0002 23.8934 19.9446C25.2669 17.889 26 15.4723 26 13C25.9963 9.68594 24.6781 6.50868 22.3347 4.16529C19.9913 1.82189 16.8141 0.503734 13.5 0.5ZM8.14286 22.2647V21.0357C8.14364 20.3255 8.4261 19.6447 8.92826 19.1425C9.43042 18.6404 10.1113 18.3579 10.8214 18.3571H16.1786C16.8887 18.3579 17.5696 18.6404 18.0717 19.1425C18.5739 19.6447 18.8564 20.3255 18.8571 21.0357V22.2647C17.2314 23.214 15.3826 23.7143 13.5 23.7143C11.6174 23.7143 9.7686 23.214 8.14286 22.2647ZM20.6362 20.9695C20.6184 19.7983 20.1412 18.6809 19.3074 17.8582C18.4736 17.0356 17.3499 16.5734 16.1786 16.5714H10.8214C9.65009 16.5734 8.52643 17.0356 7.69261 17.8582C6.8588 18.6809 6.38159 19.7983 6.36384 20.9695C4.7447 19.5237 3.60289 17.6202 3.08959 15.5111C2.57629 13.402 2.71572 11.1867 3.48941 9.15862C4.26311 7.13051 5.63458 5.38524 7.42221 4.1539C9.20985 2.92256 11.3293 2.26324 13.5 2.26324C15.6707 2.26324 17.7902 2.92256 19.5778 4.1539C21.3654 5.38524 22.7369 7.13051 23.5106 9.15862C24.2843 11.1867 24.4237 13.402 23.9104 15.5111C23.3971 17.6202 22.2553 19.5237 20.6362 20.9695Z"
                     stroke="#EEEEEE"
                 />
-            </svg></a
+            </svg>Profile</a
         >
     </div>
 </div>
 <!-- signup and login modals below -->
 {#if formModal}
-
     <div transition:fade>
         <Modal
             bind:open={formModal}
@@ -225,6 +246,73 @@
                     </div>
                 </TabItem>
             </Tabs>
+        </Modal>
+    </div>
+{/if}
+
+<!-- add product listings modals -->
+{#if addModal}
+    <div transition:fade>
+        <Modal
+            bind:open={addModal}
+            size="md"
+            autoclose={false}
+            class="w-full bg-black-500 text-white pt-6"
+            color="blue"
+        >
+        <div
+            class="flex flex-col gap-5 justify-center items-center"
+        >
+        <span class="font-medium text-2xl">Add Product Listings</span>
+
+            <div
+                class="w-4/5 flex flex-col gap-5 justify-center items-center"
+            >
+                <div
+                    class="flex flex-row justify-between items-center gap-10"
+                >
+                    <div class=" space-y-2">
+                        <label for="Fname">Product Name</label>
+                        <input
+                            id="Fname"
+                            type="text"
+                            class=" border-4 border-gray-500 w-full rounded-lg bg-black-500"
+                        />
+                    </div>
+                    <div class=" space-y-2">
+                        <label for="Lname">Product Price</label>
+                        <input
+                        min="1"
+                            id="Lname"
+                            type="number"
+                            class=" border-4 border-gray-500 w-full rounded-lg bg-black-500"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row justify-between items-center gap-10"
+                >
+                    <div class=" space-y-2">
+                        <label for="Fname">Image</label>
+                        <input
+                            id="Fname"
+                            type="file"
+                            class=" border-4 border-gray-500 w-full rounded-lg bg-black-500"
+                        />
+                    </div>
+                    <div class=" space-y-2">
+                        <label for="Lname">Description</label>
+                        <input
+                            id="Lname"
+                            type="text"
+                            class=" border-4 border-gray-500 w-full rounded-lg bg-black-500"
+                        />
+                    </div>
+                </div>
+                <Button width="w-full" round="rounded-full" link="/ProductDetails" >
+                    <span slot="text"> Add Listings </span>
+                </Button>
+            </div>
         </Modal>
     </div>
 {/if}
