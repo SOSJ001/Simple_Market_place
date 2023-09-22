@@ -15,8 +15,8 @@ import { goto } from '$app/navigation';
 //       console.log("modal", modal);
     //   on:click|preventDefault={navigate(link, modal)
 
-    }
-  };
+//     }
+//   };
 </script>
 
 <div class="flex w-full justify-center items-center">
