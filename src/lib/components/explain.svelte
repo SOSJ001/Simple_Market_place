@@ -1,6 +1,6 @@
 <script>
     import Button from "./button.svelte";
-    import image from "../StartedSmall.png";
+    import image from "$lib/Photo.png";
 
 </script>
 
