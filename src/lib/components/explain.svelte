@@ -1,6 +1,6 @@
 <script>
     import Button from "./button.svelte";
-    import image from "$lib/Photo.png"
+    import image from "../image.png";
 
 </script>
 
@@ -29,6 +29,6 @@
         </div>
     </div>
     <div class=" shadow-lg flex">
-        <img src="{image}" alt="" class="w-full md:h-full h-1/2">
+        <img src="{image}" alt="photo" class="w-full md:h-full h-1/2">
     </div>
 </div>
