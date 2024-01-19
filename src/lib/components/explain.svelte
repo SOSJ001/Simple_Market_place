@@ -29,6 +29,6 @@
         </div>
     </div>
     <div class=" shadow-lg flex">
-        <img src="{image}" alt="photo" class="w-full md:h-full h-1/2">
+        <img src="{image}" alt="photo">
     </div>
 </div>
