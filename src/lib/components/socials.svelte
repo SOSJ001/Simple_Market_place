@@ -1,5 +1,5 @@
 <span class="font-medium text-xl"><slot name="text">Sign Up</slot></span>
-<a href="" class=" hover:text-blue-600 w-4/5">
+<button class=" hover:text-blue-600 w-4/5">
   <div
     class="flex flex-row gap-3 justify-center items-center bg-gray-500 rounded-full p-3 w-full"
   >
@@ -17,9 +17,8 @@
       />
     </svg>
     <span> <slot name="text">Sign up</slot>  with Facebook</span>
-  </div></a
->
-<a href="" class=" hover:text-blue-600 w-4/5">
+  </div></button>
+<button class=" hover:text-blue-600 w-4/5">
   <div
     class="flex flex-row gap-3 justify-center items-center bg-gray-500 rounded-full p-3 w-full"
   >
@@ -48,8 +47,7 @@
       />
     </svg>
     <span><slot name="text">Sign up</slot> with Google</span>
-  </div></a
->
+  </div></button>
 <div
   class=" gap-5 flex flex-row justify-center items-center w-full font-medium text-xl"
 >
