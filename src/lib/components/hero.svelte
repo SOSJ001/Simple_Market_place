@@ -1,5 +1,5 @@
 <script>
-  import Hero from "$lib/image-1.png";
+  import Hero from "$lib/Image-1.png";
     import Button from "./button.svelte";
 </script>
 
