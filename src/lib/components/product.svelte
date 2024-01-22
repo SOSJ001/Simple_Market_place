@@ -1,5 +1,5 @@
 <script>
-    import Chair from "$lib/photo.png";
+    import Chair from "$lib/Photo.png";
     import Rating from "./rating.svelte";
 </script>
 
